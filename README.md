@@ -30,7 +30,7 @@ Find this line
 
 5. Save the file and repack your mission PBO
 
-#Configurables
+### Configurables
 
 You can edit the defines at the top of the file to customize your weed farms
 
