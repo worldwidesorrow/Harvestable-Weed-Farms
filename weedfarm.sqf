@@ -28,7 +28,7 @@ _spawnNewFarm = {
 	if (DEBUG) then {diag_log format["Spawning Weed Farm at %1",_pos];};
 };
 
-fnc_arrangeweed = {
+FNC_ArrangeWeed = {
     private ["_posi"];
     _pos = _this select 0;
     _amnt = _this select 1;
@@ -116,3 +116,4 @@ if (DEBUG) then {diag_log "All Weed Farms Cleared";};
 // Destroy global variables if script ends
 Weed_Farm_Positions = nil;
 Weed_Farm_Markers = nil;
+FNC_ArrangeWeed = nil;
