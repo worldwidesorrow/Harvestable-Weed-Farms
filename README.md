@@ -1,7 +1,7 @@
 Harvestable Weed Farms for Dayz Epoch 1.0.6+
 ==============
 
-This script will add marked hemp plant locations to the map that players can harvest. Harvesting a group of hemp plants will add a kilo of hemp to the player's inventory.
+This script will add marked hemp plant locations to the map that players can harvest. Harvesting plants is built into DayZ Epoch. A player will need to have a hunting knife on his/her toolbelt. Stand next to a hemp plant, open gear, right click on the hunting knife, and select "Harvest Plant." Harvesting a group of hemp plants will add a kilo of hemp to the player's inventory.
 
 Credit to the original author Halv.
 
