@@ -80,12 +80,11 @@ for "_i" from 1 to LOCATIONS do {
 
 while {count Weed_Farm_Positions > 0} do {
 	
-	_index = 0;
 	{
 		//if (count (_x nearEntities ["Fiberplant", 30]) < 1) then { // Does not work. Says _x is undefined.
 		if (count(nearestObjects [_x,["Fiberplant"],35]) < 1) then {
 			if (DEBUG) then {diag_log format["Weed Farm at %1 Cleared",_x];};
-			Weed_Farm_Positions set [_index, "delete"];
+			Weed_Farm_Positions set [_forEachIndex, "delete"];
 			Weed_Farm_Positions = Weed_Farm_Positions - ["delete"];
 		};
 
@@ -94,7 +93,6 @@ while {count Weed_Farm_Positions > 0} do {
 		_marker setMarkerText "Weed Farm";
 		_marker setMarkerColor COLOR;
 		Weed_Farm_Markers set [count Weed_Farm_Markers, _marker];
-		_index = _index + 1;
 	} forEach Weed_Farm_Positions;
 
 	uiSleep 5; // make the loop sleep for 5 seconds
