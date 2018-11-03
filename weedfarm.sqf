@@ -81,7 +81,6 @@ for "_i" from 1 to LOCATIONS do {
 while {count Weed_Farm_Positions > 0} do {
 	
 	{
-		//if (count (_x nearEntities ["Fiberplant", 30]) < 1) then { // Does not work. Says _x is undefined.
 		if (count(nearestObjects [_x,["Fiberplant"],35]) < 1) then {
 			if (DEBUG) then {diag_log format["Weed Farm at %1 Cleared",_x];};
 			Weed_Farm_Positions set [_forEachIndex, "delete"];
